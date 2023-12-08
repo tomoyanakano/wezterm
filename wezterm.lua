@@ -20,8 +20,19 @@ config.color_scheme = "nord"
 config.window_background_opacity = 0.93
 
 -- font
-config.font = wezterm.font("Firge35Nerd Console")
+config.font = wezterm.font("Hack Nerd Font")
 config.font_size = 13.0
+
+-- keybind
+config.disable_default_key_bindings = true
+local keybinds = require 'keybinds'
+config.keys = keybinds.keys
+config.key_tables = keybinds.key_tables
+
+config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+
+-- window
+config.window_close_confirmation = "AlwaysPrompt"
 
 -- and finally, return the configuration to wezterm
 return config
