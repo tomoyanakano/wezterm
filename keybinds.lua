@@ -113,7 +113,7 @@ return {
     { key = 'f', mods = 'SUPER',       action = act.Search 'CurrentSelectionOrEmptyString' },
     { key = 'h', mods = 'SHIFT|CTRL',  action = act.HideApplication },
     { key = 'h', mods = 'SUPER',       action = act.HideApplication },
-    { key = 'k', mods = 'SHIFT|CTRL',  action = act.ClearScrollback 'ScrollbackOnly' },
+    { key = 's', mods = 'SHIFT|CTRL',  action = act.ClearScrollback 'ScrollbackOnly' },
     { key = 'k', mods = 'SUPER',       action = act.ClearScrollback 'ScrollbackOnly' },
     { key = 'l', mods = 'SHIFT|CTRL',  action = act.ShowDebugOverlay },
     { key = 'm', mods = 'SHIFT|CTRL',  action = act.Hide },

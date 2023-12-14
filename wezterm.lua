@@ -10,14 +10,9 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
--- This is where you actually apply your config choices
-
--- For example, changing the color scheme:
-config.color_scheme = 'AdventureTime'
-
 -- colors
 config.color_scheme = "nord"
-config.window_background_opacity = 0.93
+config.window_background_opacity = 0.8
 
 -- font
 config.font = wezterm.font("Hack Nerd Font")
@@ -29,7 +24,7 @@ local keybinds = require 'keybinds'
 config.keys = keybinds.keys
 config.key_tables = keybinds.key_tables
 
-config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
+config.leader = { key = "q", mods = "CTRL", timeout_milliseconds = 1000 }
 
 -- window
 config.window_close_confirmation = "AlwaysPrompt"
